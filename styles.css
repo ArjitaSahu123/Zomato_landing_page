@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.hero__section{
+    background: url(./images/zomato_4.jpeg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    min-height: 60vh;
+    background-repeat: no-repeat;
+}
+.navbar{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    padding: 16px 48px;
+}
+.navbar a{
+    color:white;
+    text-decoration: none;
+}
+.nav__menu_container{
+    display: flex;
+    gap: 28px;/*it is wrt flex*/
+}
+.nav__menu_container .user_icon{
+    height: 25px;
+    width: 25px;
+    display: flex;/*according to all screen*/
+    align-items: center;/*int that particular box we want at center*/
+    justify-content: center;
+    border-radius: 100%; /*circle created*/
+    border: 1px solid white;
+    display:none; /*   we will get the icon in the mobile application */
+
+}
+
+@media only screen and (max-width:600px){
+    .nav__menu_container .user_icon{
+        display: flex;
+    }
+    .link{
+        display: none;
+    }
+    .hero__section{
+        min-height: 80px;
+    }
+}
